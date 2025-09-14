@@ -2,7 +2,14 @@
     box-sizing: border-box;
 }
 body {
-  display: grid;
+  font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1600px;
+    margin: auto;
+    justify-self: center;
+    word-break: break-word;
+    display: grid;
   grid-template-areas: 
     "header header header header"
     "two three four four"
@@ -10,14 +17,13 @@ body {
     "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr auto;
-  gap: 10px;
+  flex-grow: 1;
   min-height: 100vh;
-  margin: 0;
+  gap: 10px;
+  
   padding: 10px;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
 
+}
 .box {
   border: 2px solid black;
   padding: 20px;
@@ -25,6 +31,7 @@ body {
   word-break: break-word;
   text-align: center;
   min-width: 0;
+  
 }
 
 .b1, .b7{
