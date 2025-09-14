@@ -26,7 +26,7 @@ body {
 }
 .box {
   border: 2px solid black;
-  padding: 20px;
+  padding: 10px;
   overflow-wrap: break-word;
   word-break: break-word;
   text-align: center;
@@ -45,25 +45,47 @@ body {
 .b7{
     justify-content: right;
 }
-nav {
-    padding: 10px 20px;
-}
+
 
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none;  
     gap: 20px;
     margin: 0;
     padding: 0;
 }
+nav ul li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+nav ul li.item {
+position: relative;
+width: auto;
+margin: 0 10px;
+}
 nav ul li a {
-    text-decoration: none;
     color: #333; 
     font-weight: 500;
     padding: 8px 12px;
     font-size: 20px;
 }
-
+.box img{
+    width: 80%;
+    object-fit: cover;
+}
+.b3 p{
+    font-style: italic;
+}
+.b2{
+  text-align: left;
+}
+.redtext{
+  color: red;
+  font-weight: bold;
+}
+.box ol{
+  text-align: left;
+}
 .b1 { grid-area: header; }
 .b2 { grid-area: two; background: #eee; }
 .b3 { grid-area: three; background: #ccc; }
