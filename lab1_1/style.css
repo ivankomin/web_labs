@@ -3,6 +3,9 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .container{
     max-width: 1600px;
@@ -18,7 +21,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr auto;
   flex-grow: 1;
-  min-height: 100vh;
+  /*max-height: 100vh;*/
   gap: 10px;
   
   padding: 10px;
@@ -46,6 +49,11 @@ body {
     justify-content: right;
 }
 
+.header-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 nav ul {
     list-style: none;  
